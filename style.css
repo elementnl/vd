@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ebc2ff; /* Light blue background for a soft, thematic appearance */
+    font-family: 'Protest Strike', sans-serif;
+}
+
+.card {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.penguin {
+    font-size: 64px; /* Increased from 48px */
+    cursor: pointer;
+    user-select: none;
+    display: inline-block; /* To apply margin and centering if needed */
+    margin: 0 auto; /* Center the penguin if it's not already */
+}
+
+.note {
+    font-size: 20px; /* Increased from no explicit size, adjust as needed */
+    margin-top: 24px; /* Increased spacing */
+    padding: 15px;
+    background-color: #e3ebff;
+    border: 1px solid #e3ebff;
+    border-radius: 8px;
+    color: #121212;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9191;
+    color: white;
+}
+
+button:hover {
+    background-color: #ff6161;
+}
+
+#noBtn:hover {
+    transform: translateX(50px); /* Moves the 'No' button to the side on hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+.penguin img {
+    max-width: 128px; /* or any size you prefer */
+    height: auto; /* maintain aspect ratio */
+    display: block; /* remove extra space below the image */
+    margin: 0 auto; /* center the image if container .penguin is wider */
+}
+
+
